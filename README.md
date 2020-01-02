@@ -1,0 +1,3 @@
+-Spring boot application for listing posts
+-Added Spring Boot security to get admin page authentification
+-admin credentials was provided by Spring Data Jpa 
