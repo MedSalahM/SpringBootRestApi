@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Add post</title>
+</head>
+<body>
+
+<h2>New post</h2>
+<form name="form" th:action="@{/api/article/addpost}" th:object="${post}" th:method="post">
+
+    <label>Title</label>
+    <input type="text" th:field="*{title}">
+    <label>Content</label>
+    <textarea type="text" th:field="*{content}" />
+    <button>Submit</button>
+
+</form>
+
+
+</body>
+</html>
