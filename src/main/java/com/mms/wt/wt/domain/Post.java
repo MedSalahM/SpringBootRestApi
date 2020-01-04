@@ -5,6 +5,7 @@ import lombok.Data;
 
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Data
@@ -19,8 +20,8 @@ public class Post {
     private String title;
     @Column(columnDefinition = "text",nullable = true)
     private String content ;
-    @Column(columnDefinition = "varchar(25)")
-    private String date;
+    @Column(columnDefinition = "varchar(150)")
+    private Date date;
 
 
 }
