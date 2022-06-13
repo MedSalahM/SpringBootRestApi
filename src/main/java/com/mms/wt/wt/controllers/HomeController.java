@@ -40,11 +40,11 @@ public class HomeController {
     }
 
     @PostMapping("/addpost")
-    public Post addNewPost(@ModelAttribute  Post post  )
+    public String addNewPost(@ModelAttribute  Post post  )
     {
 
       postDao.addNewPost(post);
-      return post ;
+      return "redirect:" ;
 
     }
 
